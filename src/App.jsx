@@ -1,12 +1,10 @@
-import "./App.css";
+import Login from "./Pages/Login";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1 className="text-5xl ">mithu</h1>
-      </div>
-    </>
+    <div className="p-4  h-screen  justify-center items-center flex">
+      <Login></Login>
+    </div>
   );
 }
 
