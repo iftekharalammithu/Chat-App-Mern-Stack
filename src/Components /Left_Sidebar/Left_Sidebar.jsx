@@ -5,7 +5,7 @@ import Logout from "./Logout";
 
 const Left_Sidebar = () => {
   return (
-    <div>
+    <div className="border-r border-gray-500 py-2 flex flex-col ">
       <Search></Search>
       <div className="divider px-3"></div>
       <Conversation></Conversation>

@@ -12,6 +12,6 @@ body {
   background-position: center;
 }
 
-/* .custom-border {
+.custom-border {
   @apply border-[1px] border-white-400;
-} */
+}
