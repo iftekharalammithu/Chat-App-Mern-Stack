@@ -16,7 +16,7 @@ const Login = () => {
             <input
               type="text"
               placeholder="Enter Username"
-              className="input input-bordered h-10  w-full"
+              className="input input-accent input-bordered h-10  w-full"
             />
           </div>
           <div>
@@ -26,7 +26,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="Enter Password"
-              className="input input-bordered h-10  w-full"
+              className="input input-accent input-bordered h-10  w-full"
             />
           </div>
           <a
@@ -36,7 +36,9 @@ const Login = () => {
             Don't have an account?
           </a>
           <div>
-            <button className="btn btn-block btn-sm mt-2 ">Login</button>
+            <button className="btn input-accent btn-block btn-sm mt-2 ">
+              Login
+            </button>
           </div>
         </form>
       </div>
