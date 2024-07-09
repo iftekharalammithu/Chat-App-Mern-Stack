@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Signup = () => {
+  const [selectedGender, setSelectedGender] = useState("Male"); // Default value
+
+  const handleGenderChange = (event) => {
+    setSelectedGender(event.target.value);
+  };
   return (
     <div className=" flex flex-col  justify-center items-center min-w-96  mx-auto ">
       <div className="w-full p-6 custom-border rounded-lg shadow-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
@@ -55,8 +60,11 @@ const Signup = () => {
               <input
                 type="radio"
                 name="radio-2"
+                value="Male"
                 className="radio radio-primary"
-                defaultChecked
+                // defaultChecked
+                checked={selectedGender === "Male"}
+                onChange={handleGenderChange}
               />
             </div>
             <div className="align-center justify-center flex gap-3">
@@ -64,13 +72,16 @@ const Signup = () => {
               <input
                 type="radio"
                 name="radio-2"
+                value="Female"
                 className="radio radio-primary"
+                checked={selectedGender === "Female"}
+                onChange={handleGenderChange}
               />
             </div>
           </div>
           <a
             href="#"
-            className="inline-block mt-2 ml-1 hover:underline hover:text-blue-400 text-sm"
+            className="inline-block mt-5 ml-1 hover:underline hover:text-blue-400 text-sm"
           >
             Already have an account?
           </a>

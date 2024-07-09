@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-.custom-border {
-  @apply border-2 border-white-400;
-}
+
+/* .custom-border {
+  @apply border-[1px] border-white-400;
+} */
