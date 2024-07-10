@@ -15,3 +15,7 @@ body {
 .custom-border {
   @apply border-[1px] border-white-400;
 }
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
