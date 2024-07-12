@@ -21,6 +21,7 @@ const Login_hook = () => {
         "https://mern-chat-backend-3af8.onrender.com/api/auth/login",
         {
           method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
@@ -55,23 +56,20 @@ const Login_hook = () => {
 
 export default Login_hook;
 
-const handle_signup = ({
-  username,
-  password,
-}) => {
+const handle_signup = ({ username, password }) => {
   if (!username || !password) {
     toast.error("Invalid Credential", {
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        transition: Bounce,
-      });
-      return false;
-    
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+    return false;
   }
+  return true;
 };

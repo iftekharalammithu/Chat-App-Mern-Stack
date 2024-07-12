@@ -27,3 +27,4 @@ dist-ssr
 .env
 mithu.code-profile
 .vscode
+.vercel
