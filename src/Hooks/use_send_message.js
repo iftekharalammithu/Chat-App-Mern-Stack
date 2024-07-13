@@ -27,7 +27,7 @@ const use_send_message = () => {
         throw new Error(data.error);
       }
 
-      setMessages((prev) => [...prev, data]);
+      setMessages([...messages, data]);
     } catch (error) {
       console.log(error.message);
     }
