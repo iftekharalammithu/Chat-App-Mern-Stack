@@ -9,7 +9,7 @@ const Get_conversation_hook = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://mern-chat-backend-3af8.onrender.com/api/user/",
+          `${import.meta.env.VITE_API_URL}/api/user/`,
           {
             method: "POST",
             credentials: "include",

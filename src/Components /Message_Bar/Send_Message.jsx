@@ -1,10 +1,10 @@
 import React from "react";
 import { BsSend } from "react-icons/bs";
-import use_send_message from "./use_send_message";
+import use_send_message from "../../Hooks/use_send_message";
 
 const Send_Message = () => {
   const [message, set_message] = React.useState("");
-  const { send_message } = use_send_message()
+  const { send_message } = use_send_message();
 
   const handle_submit = async (e) => {
     e.preventDefault();

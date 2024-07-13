@@ -10,7 +10,7 @@ const Logout_hook = () => {
   const logout_fun = async () => {
     try {
       const response = await fetch(
-        "https://mern-chat-backend-3af8.onrender.com/api/auth/logout",
+        `${import.meta.env.VITE_API_URL}/api/auth/logout`,
         {
           method: "POST",
           headers: {

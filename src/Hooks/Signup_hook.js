@@ -23,7 +23,7 @@ const Signup_hook = () => {
     setloading(true);
     try {
       const response = await fetch(
-        "https://mern-chat-backend-3af8.onrender.com/api/auth/signup",
+        `${import.meta.env.VITE_API_URL}/api/auth/signup`,
         {
           method: "POST",
           headers: {

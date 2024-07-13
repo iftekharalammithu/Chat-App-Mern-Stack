@@ -18,7 +18,7 @@ const Login_hook = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://mern-chat-backend-3af8.onrender.com/api/auth/login",
+        `${import.meta.env.VITE_API_URL}/api/auth/login`,
         {
           method: "POST",
           credentials: "include",

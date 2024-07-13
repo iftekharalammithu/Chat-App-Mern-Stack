@@ -1,5 +1,5 @@
 import React from "react";
-import use_conversation from "../../Zustand/Use_Conversation";
+import use_conversation from "../Zustand/Use_Conversation";
 
 const use_send_message = () => {
   const { messages, setMessages, select_Conversation, setSelect_Conversation } =
@@ -8,9 +8,12 @@ const use_send_message = () => {
   const send_message = async (message) => {
     try {
       const res = await fetch(
-        `https://mern-chat-backend-3af8.onrender.com/api/messages/message/${select_Conversation._id}`,
+        `${import.meta.env.VITE_API_URL}/api/messages/message/${
+          select_Conversation._id
+        }`,
         {
           method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
@@ -19,7 +22,7 @@ const use_send_message = () => {
       );
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       if (data.error) {
         throw new Error(data.error);
       }
