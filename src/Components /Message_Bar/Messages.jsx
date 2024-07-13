@@ -4,7 +4,7 @@ import Get_messages from "../../Hooks/Get_messages";
 
 const Messages = () => {
   const { messages, loading } = Get_messages();
-  console.log("messages", messages);
+  // console.log("messages", messages);
   const last_maessage = useRef();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Messages = () => {
         ))}
       {!loading && messages.length === 0 && (
         <p className=" text-center mt-4">
-          Send Message to start the Conversation{" "}
+          Send Message to start the Conversation.
         </p>
       )}
     </div>

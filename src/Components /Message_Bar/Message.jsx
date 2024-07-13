@@ -15,10 +15,10 @@ const Message = ({ message }) => {
 
   const bubblebgcolor = from_me ? "bg-blue-500" : "bg-gray-700";
   const formated_time = extractTime(message.createdAt);
-  console.log("select", select_Conversation);
-  console.log(from_me);
-  console.log("user", user);
-  console.log("message id", message._id);
+  // console.log("select", select_Conversation);
+  // console.log(from_me);
+  // console.log("user", user);
+  // console.log("message id", message._id);
 
   return (
     <div>
