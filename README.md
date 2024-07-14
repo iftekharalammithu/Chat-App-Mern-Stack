@@ -33,10 +33,12 @@ This is a real-time chat application built using the MERN stack (MongoDB, Expres
    ```
 
 2. **Install dependencies for the client:**
+
    ```bash
    npm install
 
    ```
+
 3. **Start the client:**
    ```bash
    npm start
@@ -47,6 +49,22 @@ This is a real-time chat application built using the MERN stack (MongoDB, Expres
 1. **Register an account or log in if you already have one.**
 2. **Start chatting with other online users.**
 3. **Receive real-time updates and notifications.**
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Socket.IO](https://socket.io/)
+- [React-Toastify](https://github.com/fkhadra/react-toastify)
+
+## Contact
+
+For any inquiries, please contact [IftekharAlamMithu45@gmail.com](mailto:iftekharalammithu45@gmail.com).
 
 Follow on social media:
 
